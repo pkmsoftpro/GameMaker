@@ -1,0 +1,22 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->  
+<!DOCTYPE hibernate-configuration PUBLIC
+      "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+      "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd" >
+      
+<hibernate-configuration>  
+    <session-factory>  
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>  
+        <property name="hibernate.connection.username">fall2017_user2</property>  
+        <property name="hibernate.connection.password">team2db</property>  
+        <property name="hibernate.connection.url">jdbc:mysql://tintin.cs.indiana.edu:8099/fall2017_a7_team2</property>  
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>  
+        <property name="show_sql">true</property>   
+        <property name="connection.pool_size">1</property>  
+          
+        <mapping class="com.game.pojos.Game"></mapping> 
+        <mapping class="com.game.pojos.Player"></mapping>
+        <mapping class="com.game.pojos.ScoreSheet"></mapping> 
+  
+    </session-factory>  
+</hibernate-configuration>  
+
